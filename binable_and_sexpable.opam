@@ -17,6 +17,9 @@ depends: [
   "dune"     {>= "3.17.0"}
 ]
 available: arch != "x86_32"
+conflicts: [
+  "oxcaml-compiler" {< "5.2.0minus39"}
+]
 synopsis: "Combined [Binable] and [Sexpable] [Of_format] functors"
 description: "
 [Binable_and_sexpable] provides functors that derive both [Binable] and [Sexpable] instances from a single [to_format]/[of_format] pair, avoiding the duplication of writing separate [Sexpable.Of_sexpable] and [Binable.Of_binable] applications.
