@@ -5,7 +5,8 @@ include Binable_and_sexpable_intf
 [@@@mode.default m = (global, local)]
 
 module%template.portable
-  [@modality p] Of_format
+  [@modality p]
+  Of_format
     (Format : S
   [@mode m])
     (M : Arg [@mode m] with module Format := Format) =
@@ -34,7 +35,8 @@ end
 [@@@kind.default ka = (value, any)]
 
 module%template.portable
-  [@modality p] Of_format1
+  [@modality p]
+  Of_format1
     (Format : S1
   [@kind ka] [@mode m])
     (M : Arg1 [@kind ka] [@mode m] with module Format := Format) =
@@ -63,7 +65,8 @@ end
 [@@@kind.default kb = (value, any)]
 
 module%template.portable
-  [@modality p] Of_format2
+  [@modality p]
+  Of_format2
     (Format : S2
   [@kind ka kb] [@mode m])
     (M : Arg2 [@kind ka kb] [@mode m] with module Format := Format) =
